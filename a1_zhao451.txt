@@ -1,0 +1,34 @@
+	Employee	 	 		 
+	EID		Integer	pk		
+	EName	char(32)	 			 
+	Bonus	Integer	 		
+
+	Interviewer	 	
+	IRID	Integer	pk
+	IRName	char(32)
+	Feedback	char(200)
+	INID	Integer	fk
+	EID		Integer	fk
+
+	Candidate	 	 			 	 
+	CID		Integer	pk		
+	CName	char(32)
+	EID 	Integer	fk
+
+	Position
+	PID		Integer	pk
+	GID 	Integer	fk
+	CID 	Integer	fk
+	PName	char(32)
+	IsOpen	Integer	 
+
+	Interview	 	 			 	 
+	INID	Integer	pk		
+	PID		Integer	fk		
+	CID		Integer	fk				
+	Feedback	char(20)	 				
+	isSuccessful	Integer 								
+
+	Group
+	GID		Integer	pk
+	GName	char(32)	 
